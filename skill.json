@@ -1,0 +1,38 @@
+{
+  "name": "genpark-deep-research-consensus-engine-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Deep research multi-source consensus arbitration engine evaluating domain authority, publication recency, and claim contradictions.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "alphaparkinc",
+  "category": "deep-research",
+  "tags": [
+    "deep-research",
+    "consensus-verification",
+    "fact-checking",
+    "citation-authority",
+    "super-agent"
+  ],
+  "inputs": {
+    "topic": {
+      "type": "string",
+      "default": "Solid-State Battery Energy Density 2026"
+    },
+    "claims": {
+      "type": "array",
+      "description": "List of statements with source_url, year, confidence"
+    }
+  },
+  "outputs": {
+    "verdict": {
+      "type": "string"
+    },
+    "consensus_score": {
+      "type": "number"
+    },
+    "primary_consensus_claim": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
